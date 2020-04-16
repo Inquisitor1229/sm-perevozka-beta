@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <title>Перевозка лежачих больных</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+    <meta name="description" content="Перевозка лежачих больных">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link href="css/main.css" rel="stylesheet">
+    <link rel="icon" type="image/png" href="img/.png">
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <header class="header">
+      <div class="header-container">
+        <div class="header__top-content">
+          <p class="header__notion">Перевозка лежачих больных в Москве и в другие города России</p>
+          <div class="logo-container logo-container--header"><img class="logo" src="img/header-logo.png"></div>
+          <div class="contacts contacts--header"><a class="contacts__phone">+7 800 555 35 35</a><a class="contacts__mail">ilovevk@gmail.com</a></div>
+        </div>
+        <div class="header__bottom-content">
+          <nav class="menu menu--header">
+            <div class="menu__burger">
+              <div></div>
+              <div></div>
+              <div></div>
+            </div>
+            <ul class="menu__elements"></ul>
+            <li class="menu__item"><a href="#heroHREF"><span>ГЛАВНАЯ</span></a></li>
+            <li class="menu__item"><a href="#about-usHREF"><span>О НАС</span></a></li>
+            <li class="menu__item"><a href="#priceHREF"><span>ТАРИФЫ</span></a></li>
+            <li class="menu__item"><a href="#advantagesHREF"><span>НАШИ ПРЕИМУЩЕСТВА</span></a></li>
+            <li class="menu__item"><a href="#about-hotelHREF"><span>ПАНСИОНАТ</span></a></li>
+            <li class="menu__item"><a href="#reviewsHREF"><span>ОТЗЫВЫ</span></a></li>
+          </nav>
+        </div>
+      </div>
+    </header>
+    <main class="main">
+      <h1>Транспортировка лежачих больных</h1>
+      <section class="hero" id="heroHREF">
+        <div class="hero-back">
+          <div class="hero-container">
+            <h2 class="title title--hide">Оставить заявку</h2>
+            <div class="hero__greeting"><span class="hero__title">Транспортировка лежачих больных по Москве и в другие города России</span>
+              <p class="hero__description">Просто оставьте заявку для расчёта стоимости перевозки и мы перезвоним Вам в течение 5-и минут.</p>
+              <div class="btn-container btn-container--hero-description"><a class="btn btn--hero-description btn--pink" href="#priceHREF"><span>Тарифы</span></a></div>
+            </div>
+            <div class="hero__form">
+              <p class="hero__form-description">Оставьте заявку на вызов бригады и мы перезвоним Вам в течение 5-и минут.</p>
+              <form id="form-hero">
+                <div class="hero__email"><span class="hero__email-title">Ваше имя:</span>
+                  <input class="hero__email-field" type="text" name="name" placeholder="Введите имя" required>
+                </div>
+                <div class="hero__phone"><span class="hero__phone-title">Ваш номер телефона:</span>
+                  <input class="hero__phone-field" type="text" name="phone" placeholder="Введите номер" required>
+                </div>
+                <div class="btn-container btn-container--hero-form">
+                  <button class="btn btn--hero-form btn--pink" type="submit" onclick=""><span>Отправить</span></button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="price" id="priceHREF">
+        <div class="price-container">
+          <h2 class="title title--price">Стоимость перевозки лежачих больных</h2>
+          <div class="price__table-container">
+            <div class="price__table">
+              <div class="price__table-head">
+                <div class="row price__cells">
+                  <div class="col-6 price__cell price__cell--title"><span>Наши услуги</span></div>
+                  <div class="col-6 price__cell price__cell--title"><span>Цены</span></div>
+                </div>
+              </div>
+              <div class="price__table-main">
+                <div class="row price__cells">
+                  <div class="col-6 price__cell price__cell--content">
+                    <p>Перевозка больных по Москве в пределах МКАД (до 10 км)</p>
+                  </div>
+                  <div class="col-6 price__cell price__cell--content">
+                    <p>3500 рублей</p>
+                  </div>
+                  <div class="col-6 price__cell price__cell--content">
+                    <p>Перевозка больных по Москве за пределами МКАД (от 10 до 30 км.)</p>
+                  </div>
+                  <div class="col-6 price__cell price__cell--content">
+                    <p>4000 рублей</p>
+                  </div>
+                  <div class="col-6 price__cell price__cell--content">
+                    <p>Перевозка по короткому маршруту (Если расстояние от места до места не превышает 3 км.)</p>
+                  </div>
+                  <div class="col-6 price__cell price__cell--content">
+                    <p>2500 рублей</p>
+                  </div>
+                  <div class="col-6 price__cell price__cell--content">
+                    <p>Перевозка по короткому маршруту (Если расстояние от места до места 3-5 км.)</p>
+                  </div>
+                  <div class="col-6 price__cell price__cell--content">
+                    <p>2800 рублей</p>
+                  </div>
+                  <div class="col-6 price__cell price__cell--content">
+                    <p>Перевозка больных за МКАД и в другие регионы СНГ (оплата по километражу только туда)</p>
+                  </div>
+                  <div class="col-6 price__cell price__cell--content">
+                    <p>40 рублей/километ</p>
+                  </div>
+                  <div class="col-6 price__cell price__cell--content">
+                    <p>Перевозка больных в аэропорт, доставка лежачего больного из аэропорта.</p>
+                  </div>
+                  <div class="col-6 price__cell price__cell--content">
+                    <p>5000 рублей</p>
+                  </div>
+                  <div class="col-6 price__cell price__cell--content">
+                    <p>Перевозка, встреча больных на ЖД вокзалах с доставкой до адреса.</p>
+                  </div>
+                  <div class="col-6 price__cell price__cell--content">
+                    <p>4500 рублей</p>
+                  </div>
+                  <div class="col-6 price__cell price__cell--content">
+                    <p>Транспортировка больного к месту назначения и обратно (в пределах МКАД, 1 час ожидания бесплатно)</p>
+                  </div>
+                  <div class="col-6 price__cell price__cell--content">
+                    <p>от 6000 рублей</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="price__conditions">
+              <div class="price__conditions-head">
+                <div class="price__cell price__cell--title"><span>Условия</span></div>
+              </div>
+              <div class="price__conditions-main">
+                <div class="price__cell price__cell--content">Подъём пациента по этажам:<br>До 90 кг - 200р/этаж<br>От 90 кг - 300р/этаж</div>
+                <div class="price__cell price__cell--content">Дополнительная плата за вес:<br>От 90 кг. до 120 кг. - 500 рублей<br>От 120 кг. до 150 кг. - 700 рублей<br>От 150 кг. до 200 кг. - 1.000 рублей</div>
+                <div class="price__cell price__cell--content">Дополнительная помощь одного или двух санитаров 1000/2000 рублей (при весе больного от 150/180 кг соответственно.)</div>
+                <div class="price__cell price__cell--content">За ложный вызов заказчик обязуется оплатить до 50% стоимости поездки. (в случае отмены поездки в момент прибытия экипажа)</div>
+                <div class="price__cell price__cell--content">Если в процессе перевозки возникает необходимость в оплате парковок и въездов, то оплата производится заказчиком.</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="ring-past">
+        <div class="ring-past-container">
+          <h2 class="title title--hide">Перейти к заказу звонка</h2>
+          <p class="ring-past__text">Хотите расчитать стоимость перевозки?<br>Не время медлить, закажите перевозку и расчитайте стоимость прямо сейчас!</p>
+          <div class="btn-container btn-container--ring-past"><a class="btn btn--ring-past btn--white" href="#heroHREF"> <span>Заказать перевозку</span></a></div>
+        </div>
+      </section>
+      <section class="about-us" id="about-usHREF">
+        <div class="about-us-container">
+          <h2 class="title">О нашей компании</h2>
+          <p class="about-us__text">SM-Perevozka.ru - это компания по перевозке лежачих больных, которая занимается перевозками уже более 5 лет. Наша компания - это новые автомобили, профессионалы своего дела и водители с большим стажем. Наши услуги качественны и дешёвы.</p>
+          <div class="about-us__main">
+            <div class="about-hotel__slider">
+              <div class="carousel slide" id="carouselExampleIndicators1" data-ride="carousel">
+                <ol class="carousel-indicators">
+                  <li class="active" data-target="#carouselExampleIndicators1" data-slide-to="0"></li>
+                  <li data-target="#carouselExampleIndicators1" data-slide-to="1"></li>
+                  <li data-target="#carouselExampleIndicators1" data-slide-to="2"></li>
+                </ol>
+                <div class="carousel-inner">
+                  <div class="about-us__item carousel-item active"><img class="d-block w-100" src="img/41.png" alt="Первый слайд"></div>
+                  <div class="about-us__item carousel-item"><img class="d-block w-100" src="img/41.png" alt="Второй слайд"></div>
+                  <div class="about-us__item carousel-item"><img class="d-block w-100" src="img/41.png" alt="Третий слайд"></div>
+                </div><a class="carousel-control-prev" href="#carouselExampleIndicators1" role="button" data-slide="prev"><span class="carousel-control-prev-icon" aria-hidden="true"></span><span class="sr-only">Previous</span></a><a class="carousel-control-next" href="#carouselExampleIndicators1" role="button" data-slide="next"><span class="carousel-control-next-icon" aria-hidden="true"></span><span class="sr-only">Next</span></a>
+              </div>
+            </div>
+            <ul class="about-us__descriptions">SM-PEREVOZKA.RU это:
+              <li class="about-us__descriptions-element">Демократичные цены</li>
+              <li class="about-us__descriptions-element">Лучшие водители</li>
+              <li class="about-us__descriptions-element">Профессионалы своего дела</li>
+              <li class="about-us__descriptions-element">Скидки на перевозку при заселении в пансионат нашей сети</li>
+              <li class="about-us__descriptions-element">Новые автомобили</li>
+              <li class="about-us__descriptions-element">Комфортная перевозка лежачих больных</li>
+              <li class="about-us__descriptions-element">Компания, которой доверяют</li>
+            </ul>
+          </div>
+          <div class="about-us__memo">Наша компания не оказывает медицинские услуги и занимается лишь перевозкой лежачих больных.</div>
+        </div>
+      </section>
+      <section class="advantages" id="advantagesHREF">
+        <div class="advantages-container">
+          <h2 class="title title--advantages">Наши преимущества</h2>
+          <div class="advantages__main">
+            <div class="row advantages__advantage-list">
+              <div class="col-6 advantages__advantage-elements"><img class="advantages__advantage-image" src="img/goal.svg" alt="Кубок">
+                <div class="advantages__advantage-body"><span class="advantages__advantage-title">5 лет на российском рынке</span>
+                  <p class="advantages__advantage-text">Наша компания находится на рынке уже более 5 лет. Множество довольных клиентов и успешных перевозок лежачих больных.</p>
+                </div>
+              </div>
+              <div class="col-6 advantages__advantage-elements"><img class="advantages__advantage-image" src="img/ambulance.svg" alt="Машина">
+                <div class="advantages__advantage-body"><span class="advantages__advantage-title">Новые автомобили</span>
+                  <p class="advantages__advantage-text">Наш автопарк состоит из новых и комфортных автомобилей. Средний возраст авто в парке не превышает 3-х лет.</p>
+                </div>
+              </div>
+              <div class="col-6 advantages__advantage-elements"><img class="advantages__advantage-image" src="img/money.svg" alt="Деньги">
+                <div class="advantages__advantage-body"><span class="advantages__advantage-title">Низкие цены</span>
+                  <p class="advantages__advantage-text">Наши цены на перевозку не бьёт по Вашему карману. Цены на перевозку, так и на дополнительные услуги ниже рыночных.</p>
+                </div>
+              </div>
+              <div class="col-6 advantages__advantage-elements"><img class="advantages__advantage-image" src="img/like.svg" alt="Лайк">
+                <div class="advantages__advantage-body"><span class="advantages__advantage-title">Множество довольных клиентов</span>
+                  <p class="advantages__advantage-text">Мы дорожим своей репутацией и всегда относимся ответственно к каждой перевозке. Наши услуги славятся хорошими отзывами клиентов.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="price-calc">
+        <div class="price-calc-container">
+          <h2 class="title title--hide">Рассчитать стоимость</h2>
+          <div class="price-calc__text">Хотите расcчитать стоимость перевозки?<br>Закажите заявку на обратный звонок, и мы перезвоним Вам в течение 5-и минут!</div>
+          <div class="price-calc__form">
+            <form id="form-price-calc">
+              <div class="price-calc__fields">
+                <div class="price-calc__name">
+                  <input class="price-calc__name-field" type="text" name="name" placeholder="Введите ваше имя" required>
+                </div>
+                <div class="price-calc__phone">
+                  <input class="price-calc__phone-field" type="text" name="phone" placeholder="Введите ваш телефон" required>
+                </div>
+              </div>
+              <div class="btn-container btn-container--price-calc">
+                <button class="btn btn--price-calc btn--white" type="submit" onclick=""><span>Отправить</span></button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </section>
+      <section class="about-hotel" id="about-hotelHREF">
+        <div class="about-hotel-container">
+          <h2 class="title">О пансионате SM-pension</h2>
+          <div class="about-hotel__main">
+            <div class="about-hotel__slider">
+              <div class="carousel slide" id="carouselExampleIndicators2" data-ride="carousel">
+                <ol class="carousel-indicators">
+                  <li class="active" data-target="#carouselExampleIndicators2" data-slide-to="0"></li>
+                  <li data-target="#carouselExampleIndicators2" data-slide-to="1"></li>
+                  <li data-target="#carouselExampleIndicators2" data-slide-to="2"></li>
+                </ol>
+                <div class="carousel-inner">
+                  <div class="about-hotel__item carousel-item active"><img class="d-block w-100" src="img/41.png" alt="Первый слайд"></div>
+                  <div class="about-hotel__item carousel-item"><img class="d-block w-100" src="img/41.png" alt="Второй слайд"></div>
+                  <div class="about-hotel__item carousel-item"><img class="d-block w-100" src="img/41.png" alt="Третий слайд"></div>
+                </div><a class="carousel-control-prev" href="#carouselExampleIndicators2" role="button" data-slide="prev"><span class="carousel-control-prev-icon" aria-hidden="true"></span><span class="sr-only">Previous</span></a><a class="carousel-control-next" href="#carouselExampleIndicators2" role="button" data-slide="next"><span class="carousel-control-next-icon" aria-hidden="true"></span><span class="sr-only">Next</span></a>
+              </div>
+            </div>
+            <div class="about-hotel__text">
+              <p class="about-hotel__text-main">Социальные пансионаты и частные дома престарелых сети "SM-pension" – это более 38 объектов в Москве и ближайшем Подмосковье, высокий уровень оказания патронажных услуг, круглосуточный уход 24/7, современные методики и техники социальной реабилитации, квалифицированный персонал и домашний уют! За 5 лет работы мы стали одной из крупнейших компаний, но количество не наша цель – нам важно, чтобы каждый постоялец чувствовал себя комфортно и безопасно.</p>
+              <p class="about-hotel__text-discount">При заказе перевозки в один из пансионатов сети ''SM-pension" Вы получаете скидку на перевозку в размере 20%</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="reviews" id="reviewsHREF">
+        <div class="reviews__title-container">
+          <h2 class="title">Отзывы наших клиентов</h2>
+        </div>
+        <div class="reviews-bg">
+          <div class="reviews-container">
+            <div class="reviews__main">
+              <div class="reviews__slider">
+                <div class="carousel slide" id="carouselExampleIndicators3" data-ride="carousel">
+                  <ol class="carousel-indicators reviews__slider-indicators">
+                    <li class="active" data-target="#carouselExampleIndicators3" data-slide-to="0"></li>
+                    <li data-target="#carouselExampleIndicators3" data-slide-to="1"></li>
+                    <li data-target="#carouselExampleIndicators3" data-slide-to="2"></li>
+                  </ol>
+                  <div class="carousel-inner">
+                    <div class="reviews__review carousel-item active">
+                      <div class="reviews__review-container">
+                        <div class="reviews__review-body">
+                          <div class="reviews__review-text">Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру сгенерировать несколько абзацев более менее осмысленного текста рыбы на русском языке, а начинающему оратору отточить навык публичных выступлений в домашних условиях. При создании генератора мы использовали небезизвестный универсальный код речей. По своей сути рыбатекст является альтернативой традиционному lorem ipsum.</div>
+                          <div class="reviews__review-sign">Алексей Безруков</div>
+                        </div>
+                        <div class="reviews__review-body">
+                          <div class="reviews__review-text">Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру сгенерировать несколько абзацев более менее осмысленного текста рыбы на русском языке, а начинающему оратору отточить навык публичных выступлений в домашних условиях. При создании генератора мы использовали небезизвестный универсальный код речей. По своей сути рыбатекст является альтернативой традиционному lorem ipsum.</div>
+                          <div class="reviews__review-sign">Алексей Безруков</div>
+                        </div>
+                        <div class="reviews__review-body">
+                          <div class="reviews__review-text">Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру сгенерировать несколько абзацев более менее осмысленного текста рыбы на русском языке, а начинающему оратору отточить навык публичных выступлений в домашних условиях. При создании генератора мы использовали небезизвестный универсальный код речей. По своей сути рыбатекст является альтернативой традиционному lorem ipsum.</div>
+                          <div class="reviews__review-sign">Алексей Безруков</div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="reviews__review carousel-item">
+                      <div class="reviews__review-container">
+                        <div class="reviews__review-body">
+                          <div class="reviews__review-text">Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру сгенерировать несколько абзацев более менее осмысленного текста рыбы на русском языке, а начинающему оратору отточить навык публичных выступлений в домашних условиях. При создании генератора мы использовали небезизвестный универсальный код речей. По своей сути рыбатекст является альтернативой традиционному lorem ipsum.</div>
+                          <div class="reviews__review-sign">Алексей Безруков</div>
+                        </div>
+                        <div class="reviews__review-body">
+                          <div class="reviews__review-text">Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру сгенерировать несколько абзацев более менее осмысленного текста рыбы на русском языке, а начинающему оратору отточить навык публичных выступлений в домашних условиях. При создании генератора мы использовали небезизвестный универсальный код речей. По своей сути рыбатекст является альтернативой традиционному lorem ipsum.</div>
+                          <div class="reviews__review-sign">Алексей Безруков</div>
+                        </div>
+                        <div class="reviews__review-body">
+                          <div class="reviews__review-text">Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру сгенерировать несколько абзацев более менее осмысленного текста рыбы на русском языке, а начинающему оратору отточить навык публичных выступлений в домашних условиях. При создании генератора мы использовали небезизвестный универсальный код речей. По своей сути рыбатекст является альтернативой традиционному lorem ipsum.</div>
+                          <div class="reviews__review-sign">Алексей Безруков</div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="reviews__review carousel-item">
+                      <div class="reviews__review-container">
+                        <div class="reviews__review-body">
+                          <div class="reviews__review-text">Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру сгенерировать несколько абзацев более менее осмысленного текста рыбы на русском языке, а начинающему оратору отточить навык публичных выступлений в домашних условиях. При создании генератора мы использовали небезизвестный универсальный код речей. По своей сути рыбатекст является альтернативой традиционному lorem ipsum.</div>
+                          <div class="reviews__review-sign">Алексей Безруков</div>
+                        </div>
+                        <div class="reviews__review-body">
+                          <div class="reviews__review-text">Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру сгенерировать несколько абзацев более менее осмысленного текста рыбы на русском языке, а начинающему оратору отточить навык публичных выступлений в домашних условиях. При создании генератора мы использовали небезизвестный универсальный код речей. По своей сути рыбатекст является альтернативой традиционному lorem ipsum.</div>
+                          <div class="reviews__review-sign">Алексей Безруков</div>
+                        </div>
+                        <div class="reviews__review-body">
+                          <div class="reviews__review-text">Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру сгенерировать несколько абзацев более менее осмысленного текста рыбы на русском языке, а начинающему оратору отточить навык публичных выступлений в домашних условиях. При создании генератора мы использовали небезизвестный универсальный код речей. По своей сути рыбатекст является альтернативой традиционному lorem ipsum.</div>
+                          <div class="reviews__review-sign">Алексей Безруков</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div><a class="carousel-control-prev" href="#carouselExampleIndicators3" role="button" data-slide="prev"><span class="carousel-control-prev-icon" aria-hidden="true"></span><span class="sr-only">Previous</span></a><a class="carousel-control-next" href="#carouselExampleIndicators3" role="button" data-slide="next"><span class="carousel-control-next-icon" aria-hidden="true"></span><span class="sr-only">Next</span></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="footer-container">
+        <div class="logo-container logo-container--footer"><img class="logo logo" src="img/footer-logo.png"></div>
+        <nav class="menu menu--footer">
+          <div class="menu__burger">
+            <div></div>
+            <div></div>
+            <div></div>
+          </div>
+          <ul class="menu__elements"></ul>
+          <li class="menu__item"><a href="#heroHREF"><span>ГЛАВНАЯ</span></a></li>
+          <li class="menu__item"><a href="#about-usHREF"><span>О НАС</span></a></li>
+          <li class="menu__item"><a href="#priceHREF"><span>ТАРИФЫ</span></a></li>
+          <li class="menu__item"><a href="#advantagesHREF"><span>НАШИ ПРЕИМУЩЕСТВА</span></a></li>
+          <li class="menu__item"><a href="#about-hotelHREF"><span>ПАНСИОНАТ</span></a></li>
+          <li class="menu__item"><a href="#reviewsHREF"><span>ОТЗЫВЫ</span></a></li>
+        </nav>
+        <div class="contacts contacts--footer"><a class="contacts__phone">+7 800 555 35 35</a><a class="contacts__mail">ilovevk@gmail.com</a></div>
+      </div>
+    </footer>
+  </body>
+</html>

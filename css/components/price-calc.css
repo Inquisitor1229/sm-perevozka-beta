@@ -1,0 +1,38 @@
+.price-calc {
+  max-width: 1920px;
+  background-color: #f36295; }
+  .price-calc-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    max-width: 1170px;
+    margin: 0 auto;
+    padding: 60px 0; }
+    @media (max-width: 1170px) {
+      .price-calc-container {
+        padding-left: 10px;
+        padding-right: 10px;
+        overflow: hidden; } }
+  .price-calc__text {
+    color: #ffffff;
+    font-size: 20px;
+    font-weight: 400; }
+  .price-calc__form {
+    margin-top: 25px; }
+    .price-calc__form form {
+      display: flex;
+      flex-direction: column; }
+  .price-calc__fields {
+    display: flex; }
+  .price-calc__phone {
+    margin-left: 60px; }
+  .price-calc__name-field, .price-calc__phone-field {
+    border: none;
+    border-radius: 3px;
+    max-width: 345px;
+    padding: 14px 24px;
+    font-size: 16px; }
+
+/*# sourceMappingURL=price-calc.css.map */

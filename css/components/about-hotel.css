@@ -1,0 +1,49 @@
+.about-hotel {
+  max-width: 1920px;
+  margin-top: 90px; }
+  .about-hotel-container {
+    max-width: 1170px;
+    margin: 0 auto; }
+    @media (max-width: 1170px) {
+      .about-hotel-container {
+        padding-left: 10px;
+        padding-right: 10px; } }
+  .about-hotel__main {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px; }
+  @media (max-width: 1000px) {
+    .about-hotel__slider {
+      display: none; } }
+  .about-hotel__text {
+    margin-top: 15px;
+    padding-left: 60px; }
+    @media (max-width: 1000px) {
+      .about-hotel__text {
+        padding-left: 0px; } }
+  .about-hotel__text-main {
+    font-size: 14px; }
+  .about-hotel__text-discount {
+    font-size: 14px;
+    margin-top: 30px;
+    color: #f93b6c; }
+  .about-hotel__slider {
+    max-width: 600px;
+    max-height: 400px;
+    height: 100%;
+    width: 100%; }
+
+.about-hotel__item {
+  height: 400px;
+  width: 600px; }
+
+.carousel-indicators li {
+  border-radius: 50%;
+  width: 10px;
+  height: 10px;
+  background-color: #fff; }
+
+.carousel-indicators .active {
+  background-color: #fefefe; }
+
+/*# sourceMappingURL=about-hotel.css.map */

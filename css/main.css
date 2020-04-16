@@ -1,0 +1,590 @@
+@charset "UTF-8";
+@import url(normalize.css);
+@import url(bootstrap-grid.min.css);
+@import url(bootstrap.min.css);
+.logo-container--footer {
+  padding: 0 15px; }
+
+.title {
+  border-bottom: 4px solid #f36295;
+  font-weight: 400; }
+  .title--hide {
+    display: none; }
+  .title--price, .title--advantages {
+    margin: 0 -15px; }
+
+.contacts {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end; }
+  .contacts--header {
+    max-width: 300px;
+    width: 100%; }
+    @media (max-width: 930px) {
+      .contacts--header {
+        max-width: 180px; } }
+  .contacts--footer {
+    max-width: 230px;
+    width: 100%;
+    padding: 0 20px; }
+    .contacts--footer a {
+      color: #ffffff; }
+  .contacts a {
+    font-size: 14px; }
+
+.menu {
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+  .menu__burger {
+    display: none; }
+  .menu--header .menu__item {
+    padding-right: 30px; }
+    .menu--header .menu__item a {
+      border-bottom: 2px solid transparent;
+      transition: all 0.5s ease; }
+      .menu--header .menu__item a:hover {
+        border-color: #000; }
+    .menu--header .menu__item span {
+      font-size: 14px; }
+  .menu--footer .menu__item {
+    padding-right: 20px; }
+    .menu--footer .menu__item a {
+      border-bottom: 1px solid transparent;
+      transition: all 0.5s ease; }
+      .menu--footer .menu__item a:hover {
+        border-color: #fff; }
+    .menu--footer .menu__item span {
+      font-size: 10px;
+      color: #ffffff; }
+  .menu__item {
+    list-style: none; }
+    .menu__item:last-child {
+      padding-right: 0px; }
+
+.btn {
+  display: block;
+  border: 1px solid;
+  border-radius: 999px;
+  letter-spacing: 0.45px;
+  transition: all 0.3s ease;
+  padding: 20px 30px; }
+  .btn > span {
+    transition: all 0.3s ease;
+    font-size: 14px; }
+  .btn-container--hero-description {
+    margin-top: 45px; }
+  .btn-container--hero-form, .btn-container--price-calc {
+    margin-top: 35px;
+    align-self: center; }
+  .btn-container--ring-past {
+    margin-top: 30px; }
+  .btn--pink:hover {
+    cursor: pointer;
+    background-color: #fff; }
+    .btn--pink:hover span {
+      color: #f36295; }
+  .btn--white:hover {
+    cursor: pointer;
+    background-color: #f36295; }
+    .btn--white:hover span {
+      color: #fff; }
+  .btn--hero-description {
+    padding: 20px 64px;
+    max-width: 190px;
+    color: #ffffff;
+    border-color: #f36295;
+    background-color: #f36295; }
+  .btn--hero-form {
+    max-width: 190px;
+    padding: 19px 50px;
+    color: #ffffff;
+    border-color: #f36295;
+    background-color: #f36295; }
+  .btn--ring-past {
+    max-width: 220px;
+    color: #000000;
+    border-color: #ffffff;
+    background-color: #ffffff; }
+  .btn--price-calc {
+    max-width: 220px;
+    color: #000000;
+    border-color: #ffffff;
+    background-color: #ffffff;
+    padding: 18px 60px; }
+
+.footer {
+  max-width: 1920px;
+  background-color: #f36295;
+  margin: 90px auto 0 auto; }
+  .footer-container {
+    max-width: 1170px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px 0px 40px 0px; }
+    @media (max-width: 1170px) {
+      .footer-container {
+        padding-left: 10px;
+        padding-right: 10px; } }
+
+.header {
+  max-width: 1920px; }
+  .header-container {
+    margin: 0 auto;
+    max-width: 1170px;
+    padding: 33px 0 25px 0; }
+    @media (max-width: 1170px) {
+      .header-container {
+        padding-left: 10px;
+        padding-right: 10px; } }
+  .header__top-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; }
+  .header__notion {
+    font-weight: 400;
+    max-width: 300px;
+    font-size: 14px; }
+    @media (max-width: 1170px) {
+      .header__notion {
+        width: 100%; } }
+    @media (max-width: 930px) {
+      .header__notion {
+        max-width: 180px; } }
+  .header__bottom-content {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center; }
+
+.hero {
+  max-width: 1920px;
+  background: url(../img/hero-back.png) no-repeat; }
+  .hero-back {
+    background-color: rgba(0, 0, 0, 0.64); }
+  .hero-container {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1170px;
+    margin: 0 auto;
+    padding-top: 105px;
+    padding-bottom: 140px; }
+    @media (max-width: 1190px) {
+      .hero-container {
+        padding-left: 10px;
+        padding-right: 10px;
+        justify-content: center; } }
+    @media (max-width: 940px) {
+      .hero-container {
+        flex-direction: column;
+        justify-content: center; } }
+  .hero__greeting {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    max-width: 600px; }
+  .hero__title {
+    font-size: 39px;
+    color: #ffffff;
+    font-weight: 900;
+    line-height: 1.5; }
+  .hero__description {
+    margin-top: 20px;
+    font-size: 20px;
+    color: #ffffff; }
+  .hero__form {
+    max-width: 410px;
+    padding: 45px 50px;
+    background-color: #ffffff;
+    border-radius: 5px; }
+    .hero__form form {
+      display: flex;
+      flex-direction: column; }
+    @media (max-width: 1190px) {
+      .hero__form {
+        margin-left: 40px; } }
+  .hero__form-description {
+    font-size: 12px; }
+  .hero__email, .hero__phone {
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px; }
+  .hero__phone-title, .hero__email-title {
+    font-size: 20px; }
+  .hero__email-field, .hero__phone-field {
+    max-width: 310px;
+    margin-top: 10px;
+    border: 2px solid #444444;
+    font-size: 20px;
+    padding: 10px 5px; }
+
+.price {
+  max-width: 1920px;
+  margin-top: 80px; }
+  .price-container {
+    max-width: 1170px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    padding: 0 15px; }
+    @media (max-width: 1170px) {
+      .price-container {
+        margin-left: 25px;
+        margin-right: 25px;
+        overflow: hidden; } }
+  .price__table-container {
+    margin-top: 35px; }
+  .price__table-head {
+    background-color: #f36295;
+    margin: 0 -15px; }
+  .price__conditions-head {
+    background-color: #f36295;
+    margin: 0 -15px; }
+  .price__cell {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px; }
+    .price__cell p {
+      font-size: 20px; }
+    .price__cell--title {
+      padding: 25px; }
+    .price__cell--content {
+      padding: 25px 25px 20px 30px;
+      border: 1px solid #eaeaea; }
+  .price__conditions-main {
+    margin: 0 -15px;
+    text-align: center; }
+
+.about-us {
+  max-width: 1920px; }
+  .about-us-container {
+    max-width: 1170px;
+    margin: 0 auto; }
+    @media (max-width: 1170px) {
+      .about-us-container {
+        padding-left: 10px;
+        padding-right: 10px; } }
+  .about-us__text {
+    margin-top: 35px;
+    font-size: 20px;
+    font-weight: 400; }
+  .about-us__main {
+    display: flex;
+    margin-top: 40px; }
+  @media (max-width: 1000px) {
+    .about-us__slider {
+      display: none; } }
+  .about-us__descriptions {
+    margin-left: 55px;
+    color: #f36295;
+    font-size: 26px;
+    list-style: none; }
+  .about-us__descriptions-element {
+    color: #000; }
+    .about-us__descriptions-element:before {
+      content: '-';
+      padding: 5px;
+      font-weight: 900; }
+  .about-us__memo {
+    margin-top: 15px;
+    font-size: 20px;
+    color: #f15b5b;
+    padding: 30px 230px;
+    text-align: center;
+    box-shadow: 0px 0px 2px #242424; }
+
+.about-us__item {
+  height: 400px;
+  width: 600px; }
+
+.advantages {
+  max-width: 1920px;
+  margin-top: 90px; }
+  .advantages-container {
+    max-width: 1170px;
+    margin: 0 auto;
+    padding: 0 15px; }
+    @media (max-width: 1170px) {
+      .advantages-container {
+        padding-left: 25px;
+        padding-right: 25px; } }
+  .advantages__main {
+    margin-top: 30px; }
+  .advantages__advantage-list {
+    display: flex;
+    justify-content: space-between; }
+  .advantages__advantage-elements {
+    max-width: 560px;
+    padding: 40px 30px;
+    border: 1px solid #f1f1f1;
+    margin-bottom: 30px;
+    display: flex; }
+  .advantages__advantage-image {
+    width: 60px;
+    height: 60px; }
+  .advantages__advantage-body {
+    margin-left: 15px; }
+  .advantages__advantage-title {
+    font-size: 18px;
+    font-weight: bold; }
+  .advantages__advantage-text {
+    font-size: 14px;
+    margin-top: 10px; }
+
+.price-calc {
+  max-width: 1920px;
+  background-color: #f36295; }
+  .price-calc-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    max-width: 1170px;
+    margin: 0 auto;
+    padding: 60px 0; }
+    @media (max-width: 1170px) {
+      .price-calc-container {
+        padding-left: 10px;
+        padding-right: 10px;
+        overflow: hidden; } }
+  .price-calc__text {
+    color: #ffffff;
+    font-size: 20px;
+    font-weight: 400; }
+  .price-calc__form {
+    margin-top: 25px; }
+    .price-calc__form form {
+      display: flex;
+      flex-direction: column; }
+  .price-calc__fields {
+    display: flex; }
+  .price-calc__phone {
+    margin-left: 60px; }
+  .price-calc__name-field, .price-calc__phone-field {
+    border: none;
+    border-radius: 3px;
+    max-width: 345px;
+    padding: 14px 24px;
+    font-size: 16px; }
+
+.about-hotel {
+  max-width: 1920px;
+  margin-top: 90px; }
+  .about-hotel-container {
+    max-width: 1170px;
+    margin: 0 auto; }
+    @media (max-width: 1170px) {
+      .about-hotel-container {
+        padding-left: 10px;
+        padding-right: 10px; } }
+  .about-hotel__main {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px; }
+  @media (max-width: 1000px) {
+    .about-hotel__slider {
+      display: none; } }
+  .about-hotel__text {
+    margin-top: 15px;
+    padding-left: 60px; }
+    @media (max-width: 1000px) {
+      .about-hotel__text {
+        padding-left: 0px; } }
+  .about-hotel__text-main {
+    font-size: 14px; }
+  .about-hotel__text-discount {
+    font-size: 14px;
+    margin-top: 30px;
+    color: #f93b6c; }
+  .about-hotel__slider {
+    max-width: 600px;
+    max-height: 400px;
+    height: 100%;
+    width: 100%; }
+
+.about-hotel__item {
+  height: 400px;
+  width: 600px; }
+
+.carousel-indicators li {
+  border-radius: 50%;
+  width: 10px;
+  height: 10px;
+  background-color: #fff; }
+
+.carousel-indicators .active {
+  background-color: #fefefe; }
+
+.reviews {
+  max-width: 1920px;
+  margin-top: 90px; }
+  .reviews__title-container {
+    max-width: 1170px;
+    margin: 0 auto; }
+  .reviews-bg {
+    margin-top: 30px;
+    background-color: #f36295; }
+  .reviews-container {
+    max-width: 1170px;
+    margin: 0 auto; }
+    @media (max-width: 1170px) {
+      .reviews-container {
+        padding-left: 10px;
+        padding-right: 10px;
+        overflow: hidden; } }
+  .reviews__main {
+    padding: 90px 0; }
+  .reviews__slider-indicators {
+    margin-bottom: -30px; }
+  .reviews__review {
+    max-width: 1170px;
+    max-height: 300px; }
+  .reviews__review-container {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 100px; }
+  .reviews__review-body {
+    max-width: 280px;
+    background-color: #fff;
+    border-radius: 7px;
+    padding: 30px 25px 25px; }
+  .reviews__review-text {
+    width: 100%;
+    font-size: 12px;
+    color: #929292; }
+  .reviews__review-sign {
+    font-size: 12px;
+    color: #444444;
+    padding-top: 25px;
+    font-weight: 400; }
+
+.ring-past {
+  max-width: 2150px;
+  margin-left: -200px;
+  padding-left: 200px;
+  margin-top: 150px;
+  background: url(../img/ring-past-back.jpg) no-repeat; }
+  @media (max-width: 1430px) {
+    .ring-past {
+      margin-left: -40px;
+      padding-left: 400px; } }
+  .ring-past-container {
+    max-width: 1170px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-top: 150px;
+    padding-bottom: 150px; }
+    @media (max-width: 1170px) {
+      .ring-past-container {
+        padding-left: 10px;
+        padding-right: 10px;
+        overflow: hidden; } }
+  .ring-past__text {
+    font-size: 20px;
+    color: #ffffff; }
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url(../fonts/Montserrat-Regular.ttf) format("truetype");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url(../fonts/Montserrat-Black.ttf) format("truetype");
+  font-weight: 900;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url(../fonts/Montserrat-Medium.ttf) format("truetype");
+  font-weight: 400;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url(../fonts/Montserrat-Bold.ttf) format("truetype");
+  font-weight: bold;
+  font-style: normal; }
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box; }
+
+body {
+  margin: 0;
+  color: #0c0c0c;
+  font-family: 'Montserrat', sans-serif; }
+
+/* Базовые стили, начало*/
+img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  max-width: 100%;
+  max-height: 100%; }
+
+a {
+  color: #0c0c0c;
+  text-decoration: none;
+  font-weight: 400;
+  font-size: 12px;
+  transition: all 0.2s ease; }
+
+ul {
+  padding: 0;
+  margin: 0; }
+
+p {
+  margin: 0;
+  color: #0c0c0c;
+  font-size: 12px; }
+
+h1 {
+  display: none; }
+
+h2 {
+  font-size: 26px;
+  font-weight: 900; }
+
+h3 {
+  font-size: 22px; }
+
+h4 {
+  font-size: 18px; }
+
+h5 {
+  font-size: 14px; }
+
+h6 {
+  font-size: 10px; }
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  color: #0c0c0c; }
+
+/* Базовые стили, конец */
+.main, .header {
+  margin: 0 auto;
+  max-width: 1920px; }
+
+@media (max-width: 1140px) {
+  h2 {
+    font-size: 24px; } }
+
+@media (max-width: 960px) {
+  h2 {
+    font-size: 20px; }
+  h3 {
+    font-size: 16px; } }
+
+/*# sourceMappingURL=main.css.map */

@@ -1,0 +1,30 @@
+.header {
+  max-width: 1920px; }
+  .header-container {
+    margin: 0 auto;
+    max-width: 1170px;
+    padding: 33px 0 25px 0; }
+    @media (max-width: 1170px) {
+      .header-container {
+        padding-left: 10px;
+        padding-right: 10px; } }
+  .header__top-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; }
+  .header__notion {
+    font-weight: 400;
+    max-width: 300px;
+    font-size: 14px; }
+    @media (max-width: 1170px) {
+      .header__notion {
+        width: 100%; } }
+    @media (max-width: 930px) {
+      .header__notion {
+        max-width: 180px; } }
+  .header__bottom-content {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center; }
+
+/*# sourceMappingURL=header.css.map */

@@ -1,0 +1,113 @@
+.logo-container--footer {
+  padding: 0 15px; }
+
+.title {
+  border-bottom: 4px solid #f36295;
+  font-weight: 400; }
+  .title--hide {
+    display: none; }
+  .title--price, .title--advantages {
+    margin: 0 -15px; }
+
+.contacts {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end; }
+  .contacts--header {
+    max-width: 300px;
+    width: 100%; }
+    @media (max-width: 930px) {
+      .contacts--header {
+        max-width: 180px; } }
+  .contacts--footer {
+    max-width: 230px;
+    width: 100%;
+    padding: 0 20px; }
+    .contacts--footer a {
+      color: #ffffff; }
+  .contacts a {
+    font-size: 14px; }
+
+.menu {
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+  .menu__burger {
+    display: none; }
+  .menu--header .menu__item {
+    padding-right: 30px; }
+    .menu--header .menu__item a {
+      border-bottom: 2px solid transparent;
+      transition: all 0.5s ease; }
+      .menu--header .menu__item a:hover {
+        border-color: #000; }
+    .menu--header .menu__item span {
+      font-size: 14px; }
+  .menu--footer .menu__item {
+    padding-right: 20px; }
+    .menu--footer .menu__item a {
+      border-bottom: 1px solid transparent;
+      transition: all 0.5s ease; }
+      .menu--footer .menu__item a:hover {
+        border-color: #fff; }
+    .menu--footer .menu__item span {
+      font-size: 10px;
+      color: #ffffff; }
+  .menu__item {
+    list-style: none; }
+    .menu__item:last-child {
+      padding-right: 0px; }
+
+.btn {
+  display: block;
+  border: 1px solid;
+  border-radius: 999px;
+  letter-spacing: 0.45px;
+  transition: all 0.3s ease;
+  padding: 20px 30px; }
+  .btn > span {
+    transition: all 0.3s ease;
+    font-size: 14px; }
+  .btn-container--hero-description {
+    margin-top: 45px; }
+  .btn-container--hero-form, .btn-container--price-calc {
+    margin-top: 35px;
+    align-self: center; }
+  .btn-container--ring-past {
+    margin-top: 30px; }
+  .btn--pink:hover {
+    cursor: pointer;
+    background-color: #fff; }
+    .btn--pink:hover span {
+      color: #f36295; }
+  .btn--white:hover {
+    cursor: pointer;
+    background-color: #f36295; }
+    .btn--white:hover span {
+      color: #fff; }
+  .btn--hero-description {
+    padding: 20px 64px;
+    max-width: 190px;
+    color: #ffffff;
+    border-color: #f36295;
+    background-color: #f36295; }
+  .btn--hero-form {
+    max-width: 190px;
+    padding: 19px 50px;
+    color: #ffffff;
+    border-color: #f36295;
+    background-color: #f36295; }
+  .btn--ring-past {
+    max-width: 220px;
+    color: #000000;
+    border-color: #ffffff;
+    background-color: #ffffff; }
+  .btn--price-calc {
+    max-width: 220px;
+    color: #000000;
+    border-color: #ffffff;
+    background-color: #ffffff;
+    padding: 18px 60px; }
+
+/*# sourceMappingURL=common.css.map */
