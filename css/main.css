@@ -216,7 +216,7 @@
   .hero__email-field, .hero__phone-field {
     max-width: 310px;
     margin-top: 10px;
-    border: 2px solid #444444;
+    border: 1px solid #444444;
     font-size: 20px;
     padding: 10px 5px; }
 
@@ -464,14 +464,18 @@
 
 .ring-past {
   max-width: 2150px;
-  margin-left: -200px;
-  padding-left: 200px;
+  margin-left: -250px;
+  padding-left: 250px;
   margin-top: 150px;
   background: url(../img/ring-past-back.jpg) no-repeat; }
   @media (max-width: 1430px) {
     .ring-past {
-      margin-left: -40px;
-      padding-left: 400px; } }
+      margin-left: -250px;
+      padding-left: 250px; } }
+  @media (max-width: 1330px) {
+    .ring-past {
+      margin-left: -300px;
+      padding-left: 300px; } }
   .ring-past-container {
     max-width: 1170px;
     margin: 0 auto;
