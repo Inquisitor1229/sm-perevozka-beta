@@ -11,6 +11,8 @@
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <script src="script/script1.js"></script>
+    <script src="script/number-symbol.js"></script>
   </head>
   <body>
     <header class="header">
@@ -55,7 +57,7 @@
                   <input class="hero__email-field" type="text" name="name" placeholder="Введите имя" required>
                 </div>
                 <div class="hero__phone"><span class="hero__phone-title">Ваш номер телефона:</span>
-                  <input class="hero__phone-field" type="text" name="phone" placeholder="Введите номер" required>
+                  <input class="hero__phone-field only_num-js" type="text" name="phone" placeholder="Введите номер" required>
                 </div>
                 <div class="btn-container btn-container--hero-form">
                   <button class="btn btn--hero-form btn--pink" type="submit" onclick=""><span>Отправить</span></button>
@@ -154,7 +156,7 @@
       <section class="about-us" id="about-usHREF">
         <div class="about-us-container">
           <h2 class="title">О нашей компании</h2>
-          <p class="about-us__text">SM-Perevozka.ru - это компания по перевозке лежачих больных, которая занимается перевозками уже более 5 лет. Наша компания - это новые автомобили, профессионалы своего дела и водители с большим стажем. Наши услуги качественны и дешёвы.</p>
+          <p class="about-us__text">SM-Perevozka - это компания по перевозке лежачих больных, которая занимается перевозками уже более 5 лет. Наша компания - это новые автомобили, профессионалы своего дела и водители с большим стажем. Наши услуги качественны и дешёвы.</p>
           <div class="about-us__main">
             <div class="about-hotel__slider">
               <div class="carousel slide" id="carouselExampleIndicators1" data-ride="carousel">
@@ -170,7 +172,7 @@
                 </div><a class="carousel-control-prev" href="#carouselExampleIndicators1" role="button" data-slide="prev"><span class="carousel-control-prev-icon" aria-hidden="true"></span><span class="sr-only">Previous</span></a><a class="carousel-control-next" href="#carouselExampleIndicators1" role="button" data-slide="next"><span class="carousel-control-next-icon" aria-hidden="true"></span><span class="sr-only">Next</span></a>
               </div>
             </div>
-            <ul class="about-us__descriptions">SM-PEREVOZKA.RU это:
+            <ul class="about-us__descriptions">SM-PEREVOZKA это:
               <li class="about-us__descriptions-element">Демократичные цены</li>
               <li class="about-us__descriptions-element">Лучшие водители</li>
               <li class="about-us__descriptions-element">Профессионалы своего дела</li>
@@ -223,7 +225,7 @@
                   <input class="price-calc__name-field" type="text" name="name" placeholder="Введите ваше имя" required>
                 </div>
                 <div class="price-calc__phone">
-                  <input class="price-calc__phone-field" type="text" name="phone" placeholder="Введите ваш телефон" required>
+                  <input class="price-calc__phone-field only_num-js" type="text" name="phone" placeholder="Введите ваш телефон" required>
                 </div>
               </div>
               <div class="btn-container btn-container--price-calc">

@@ -4,6 +4,10 @@
   .reviews__title-container {
     max-width: 1170px;
     margin: 0 auto; }
+    @media (max-width: 1170px) {
+      .reviews__title-container {
+        padding-left: 10px;
+        padding-right: 10px; } }
   .reviews-bg {
     margin-top: 30px;
     background-color: #f36295; }
